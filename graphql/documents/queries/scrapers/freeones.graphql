@@ -1,0 +1,3 @@
+query ScrapeFreeonesPerformers($q: String!) {
+  scrapeFreeonesPerformerList(query: $q)
+}

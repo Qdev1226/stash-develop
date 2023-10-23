@@ -1,0 +1,9 @@
+query SystemStatus {
+  systemStatus {
+    databaseSchema
+    databasePath
+    appSchema
+    status
+    configPath
+  }
+}

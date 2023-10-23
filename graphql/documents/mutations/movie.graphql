@@ -1,0 +1,25 @@
+mutation MovieCreate($input: MovieCreateInput!) {
+  movieCreate(input: $input) {
+    ...MovieData
+  }
+}
+
+mutation MovieUpdate($input: MovieUpdateInput!) {
+  movieUpdate(input: $input) {
+    ...MovieData
+  }
+}
+
+mutation BulkMovieUpdate($input: BulkMovieUpdateInput!) {
+  bulkMovieUpdate(input: $input) {
+    ...MovieData
+  }
+}
+
+mutation MovieDestroy($id: ID!) {
+  movieDestroy(input: { id: $id })
+}
+
+mutation MoviesDestroy($ids: [ID!]!) {
+  moviesDestroy(ids: $ids)
+}
